@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(44, 113, 90);
+    background-image: linear-gradient(silver, white);
+    color: rgba(10, 1, 1, 0.907);
+    h1{
+        color: black;
+        text-shadow: orangered 2.0px 2.0px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        font-size: 2.5rem;
+            }
+    p{
+        color: black;
+        text-shadow: orangered 1.0px 1.0px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        font-size: 1.0rem;}
+    h2{
+        color: black;
+        text-shadow: orangered 2.0px 2.0px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        font-size: 2.0rem;
+    }
+    p2{
+        color: black;
+        text-shadow: orangered 1.0px 1.0px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center);
+        font-size: 1.0rem;}
+    }
+    h3{
+        color: black;
+        text-shadow: orangered 2.0px 2.0px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        font-size: 2.0rem;
+    }
+    p3{
+        color: black;
+        text-shadow: orangered 1.0px 1.0px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center);
+        font-size: 1.0rem;
+    }
+h4{
+    color: black;
+        text-shadow: orangered 2.0px 2.0px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        font-size: 2.0rem;
+}
+p4{
+    color: black;
+        text-shadow: orangered 1.0px 1.0px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center);
+        font-size: 1.0rem;}
+}
+
+
+    }
