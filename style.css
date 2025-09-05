@@ -1,32 +1,36 @@
 body{
     background-color: rgb(44, 113, 90);
-    background-image: linear-gradient(silver, white);
+    background-image: linear-gradient(rgb(137, 115, 115), rgb(51, 10, 10));
     color: rgba(10, 1, 1, 0.907);
+       
     h1{
         color: black;
         text-shadow: orangered 2.0px 2.0px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         text-align: center;
         font-size: 2.5rem;
+        margin:8px;
             }
     p{
         color: black;
         text-shadow: orangered 1.0px 1.0px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         text-align: center;
-        font-size: 1.0rem;}
+        font-size: 1.0rem;
+    }
     h2{
         color: black;
         text-shadow: orangered 2.0px 2.0px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         text-align: center;
         font-size: 2.0rem;
+        align;  
     }
-    p2{
+        p2{
         color: black;
         text-shadow: orangered 1.0px 1.0px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        text-align: center);
+        text-align: center;
         font-size: 1.0rem;}
     }
     h3{
@@ -40,7 +44,7 @@ body{
         color: black;
         text-shadow: orangered 1.0px 1.0px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        text-align: center);
+        text-align: center;
         font-size: 1.0rem;
     }
 h4{
@@ -54,9 +58,29 @@ p4{
     color: black;
         text-shadow: orangered 1.0px 1.0px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        text-align: center);
+        text-align: center;
         font-size: 1.0rem;}
 }
-
-
+   categoria{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+}
+.categoria-videos{
+    display:flex;
+    overflow-x: auto;
+    gap: 10px;
     }
+.categoria-videos img{
+    opacity: 0.5;
+    height: 150px;
+}
+.categoria-videos img:hover{
+    opacity: 1.0;
+    border:10px solid rgb(231, 243, 7)
+}
+header{
+    border:solid 5px;
+}
+
+    
