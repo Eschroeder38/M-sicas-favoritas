@@ -1,100 +1,135 @@
-body {
-    background: linear-gradient(rgba(77, 85, 85, 0.771), rgb(16, 34, 22));
-    background-attachment: fixed; /* O fundo fica parado ao rolar */
-    color: black;
-    font-family: Impact, sans-serif;
-    margin: 0;
-    padding: 20px;
+/* 1. CONFIGURAÇÕES GERAIS */
+html {
+    scroll-behavior: smooth;
 }
 
+body {
+    /* Gradiente profundo e moderno */
+    background: linear-gradient(135deg, #1e2525 0%, #0d1a11 100%);
+    background-attachment: fixed;
+    color: #f4f4f4; /* Texto claro para leitura no fundo escuro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza tudo no corpo do site */
+}
+
+/* 2. MENU (STICKY E MODERNO) */
+.menu {
+    background-color: rgba(15, 25, 20, 0.95);
+    backdrop-filter: blur(10px); /* Efeito de vidro fosco */
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    z-index: 1000;
+    width: 100%;
+    border-bottom: 2px solid #6bf541; /* Linha verde que você gosta */
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #6bf541;
+}
+
+/* 3. TÍTULOS E TEXTOS */
 h1, h2, h3, h4 {
     text-align: center;
-    text-shadow: rgb(82, 156, 185) 2px 2px;
+    color: #6bf541; /* Títulos em verde para destaque */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-family: Impact, sans-serif;
+    letter-spacing: 1px;
+    margin-top: 40px;
 }
 
 p {
-    text-align: center;
-    font-size: 1.2rem;
-    line-height: 1.6; /* Melhora a leitura do texto */
-}
-
-/* Imagens */
-/* Imagens gerais do corpo do site (como a do topo) */
-p img {
-    width: 80%;
-    max-width: 600px;
+    max-width: 800px;
     margin: 20px auto;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #d1d1d1;
+    padding: 0 20px;
+}
+
+/* 4. IMAGENS E VÍDEOS (CENTRALIZAÇÃO TOTAL) */
+img {
     display: block;
-    border-radius: 20px;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+    max-width: 90%;
+    height: auto;
 }
 
-/* Imagens específicas da galeria (miniaturas) */
-.categoria-videos img {
-    opacity: 0.6;
-    height: 180px; /* Isso mantém a altura fixa */
-    width: auto;   /* Isso faz a largura se ajustar proporcionalmente */
-    display: inline-block; /* Garante que fiquem uma ao lado da outra */
-    border-radius: 10px;
-    transition: 0.4s;
-    margin: 0; /* Remove margens automáticas que podem quebrar o flex */
+.video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
-/* Vídeos */
-.video img {
-    width: 100%; /* Elas vão ocupar a largura do player */
-    max-width: 560px; /* Mesma largura do iframe */
-    margin-bottom: 10px; /* Dá um espacinho do player */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.video iframe {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+    border: 2px solid rgba(107, 245, 65, 0.2);
+    max-width: 95%;
 }
 
-/* Seção de Categorias (Onde você usou Flexbox) */
+/* 5. SEÇÃO DE CATEGORIAS (FLEXBOX) */
 .categoria {
-    margin-top: 50px;
-    padding: 20px;
+    width: 100%;
+    margin-top: 60px;
+    padding: 40px 0;
+    background-color: rgba(0, 0, 0, 0.2); /* Sutil destaque de fundo */
 }
 
 .categoria-videos {
     display: flex;
+    justify-content: center; /* Centraliza os itens da galeria */
     overflow-x: auto;
-    gap: 15px;
-    padding: 10px;
+    gap: 20px;
+    padding: 20px;
 }
 
 .categoria-videos img {
-    opacity: 0.6;
     height: 200px;
-    width: auto; /* Mantém a proporção */
+    width: auto;
+    opacity: 0.7;
+    transition: 0.4s;
+    margin: 0;
     border-radius: 10px;
-    transition: 0.3s; /* Suaviza o efeito de hover */
 }
 
 .categoria-videos img:hover {
     opacity: 1;
-    transform: scale(1.05); /* Dá um leve zoom ao passar o mouse */
-    border: 5px solid rgb(107, 245, 65);
+    transform: translateY(-10px);
+    border: 3px solid #6bf541;
 }
-html {
-    scroll-behavior: smooth;
-}
-.menu {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 15px;
-    position: sticky; /* O menu fica grudado no topo ao rolar */
-    top: 0;
+
+/* 6. RODAPÉ */
+footer {
+    width: 100%;
+    background-color: #0a110d;
+    color: #888;
+    padding: 40px 20px;
     text-align: center;
-    z-index: 1000;
+    margin-top: 60px;
+    font-size: 0.9rem;
 }
 
-.menu a {
-    color: white;
+footer a {
+    color: #6bf541;
     text-decoration: none;
-    margin: 0 15px;
-    font-family: Arial, sans-serif; /* Fonte limpa para leitura */
-    font-weight: bold;
-}
-
-.menu a:hover {
-    color: rgb(107, 245, 65); /* Cor que você já gosta */
 }
