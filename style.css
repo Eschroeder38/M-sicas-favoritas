@@ -1,102 +1,100 @@
-body{
-    background-color: rgb(44, 113, 90);
-    background-image: linear-gradient(rgba(77, 85, 85, 0.771), rgb(16, 34, 22));
-    color: rgba(10, 1, 1, 0.907);
-    
-     h1{
-        color: black;
-        text-shadow: rgb(82, 156, 185) 2.0px 2.0px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        text-align: center;
-        font-size: 2.5rem;
-        margin:8px;
-            }
-    p{
-        color: black;
-        text-shadow:  rgb(82, 156, 185) 1.0px 1.0px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        text-align: center;
-        font-size: 1.5rem;
-    }
-    img {
-    text-align: center;
-    width: 80%;
-    margin: auto;
-    display: block;
+body {
+    background: linear-gradient(rgba(77, 85, 85, 0.771), rgb(16, 34, 22));
+    background-attachment: fixed; /* O fundo fica parado ao rolar */
+    color: black;
+    font-family: Impact, sans-serif;
+    margin: 0;
     padding: 20px;
-    border-radius: 30%;
 }
-.video{
-    margin: auto;
+
+h1, h2, h3, h4 {
     text-align: center;
+    text-shadow: rgb(82, 156, 185) 2px 2px;
 }
-    h2{
-        color: black;
-        text-shadow:  rgb(82, 156, 185) 2.0px 2.0px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        text-align: center;
-        font-size: 2.0rem;
-        align;  
-    }
-        p2{
-        color: black;
-        text-shadow:  rgb(82, 156, 185) 1.0px 1.0px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        text-align: center;
-        font-size: 1.5rem;}
-    
-    h3{
-        color: black;
-        text-shadow:  rgb(82, 156, 185) 2.0px 2.0px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        text-align: center;
-        font-size: 2.0rem;
-    }
-    p3{
-        color: black;
-        text-shadow:  rgb(82, 156, 185) 1.0px 1.0px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        text-align: center;
-        font-size: 1.5rem;
-    }
-h4{
-    color: black;
-        text-shadow:  rgb(82, 156, 185) 2.0px 2.0px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        text-align: center;
-        font-size: 2.0rem;
-}
-p4{
-    color: black;
-        text-shadow:  rgb(82, 156, 185) 1.0px 1.0px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        text-align: center;
-        font-size: 1.5rem;}
 
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6; /* Melhora a leitura do texto */
 }
-   categoria{
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-top: 70px;
+
+/* Imagens */
+/* Imagens gerais do corpo do site (como a do topo) */
+p img {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 20px;
 }
-.categoria-videos{
-    display:flex;
+
+/* Imagens específicas da galeria (miniaturas) */
+.categoria-videos img {
+    opacity: 0.6;
+    height: 180px; /* Isso mantém a altura fixa */
+    width: auto;   /* Isso faz a largura se ajustar proporcionalmente */
+    display: inline-block; /* Garante que fiquem uma ao lado da outra */
+    border-radius: 10px;
+    transition: 0.4s;
+    margin: 0; /* Remove margens automáticas que podem quebrar o flex */
+}
+
+/* Vídeos */
+.video img {
+    width: 100%; /* Elas vão ocupar a largura do player */
+    max-width: 560px; /* Mesma largura do iframe */
+    margin-bottom: 10px; /* Dá um espacinho do player */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Seção de Categorias (Onde você usou Flexbox) */
+.categoria {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.categoria-videos {
+    display: flex;
     overflow-x: auto;
-    gap: 10px;
-    }
-.categoria-videos img{
-    opacity: 0.5;
-    height: 226px;
-    width: 400px;
-
-    
-}
-.categoria-videos img:hover{
-    opacity: 1.0;
-    border:10px solid rgb(107, 245, 65)
-}
-header{
-    border:solid 5px;
+    gap: 15px;
+    padding: 10px;
 }
 
-    
+.categoria-videos img {
+    opacity: 0.6;
+    height: 200px;
+    width: auto; /* Mantém a proporção */
+    border-radius: 10px;
+    transition: 0.3s; /* Suaviza o efeito de hover */
+}
+
+.categoria-videos img:hover {
+    opacity: 1;
+    transform: scale(1.05); /* Dá um leve zoom ao passar o mouse */
+    border: 5px solid rgb(107, 245, 65);
+}
+html {
+    scroll-behavior: smooth;
+}
+.menu {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    position: sticky; /* O menu fica grudado no topo ao rolar */
+    top: 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-family: Arial, sans-serif; /* Fonte limpa para leitura */
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: rgb(107, 245, 65); /* Cor que você já gosta */
+}
